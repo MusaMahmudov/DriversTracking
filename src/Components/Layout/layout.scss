@@ -1,0 +1,10 @@
+main {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+
+  & .main-part {
+    margin-top: 90px;
+    border: 1px solid black;
+  }
+}

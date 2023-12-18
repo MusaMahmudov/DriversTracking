@@ -1,0 +1,28 @@
+.driver-details {
+  & .container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    & .details {
+      padding: 10px 20px;
+      & .info {
+        margin: 20px 0px;
+        & h1,
+        p {
+          margin: 0px;
+        }
+        & h1 {
+          font-weight: 900;
+          font-size: 17px;
+        }
+        p {
+          color: gray;
+        }
+      }
+    }
+    & .button {
+      padding: 5px 20px;
+    }
+  }
+}

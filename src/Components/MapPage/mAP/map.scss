@@ -1,0 +1,221 @@
+.map {
+  display: flex;
+  &-search {
+    height: 70vh;
+    overflow-x: scroll;
+    width: 50%;
+    padding: 20px;
+    & .container {
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      flex-direction: column;
+      & .search {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        &-settings {
+          display: flex;
+          gap: 10px;
+        }
+        & button {
+          padding: 5px 20px;
+          border: none;
+          background: black;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          color: white;
+          border-radius: 5px;
+          cursor: pointer;
+          letter-spacing: 1px;
+          transition: 0.5s;
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
+
+      & .results {
+        margin-top: 10px;
+        width: 300px;
+        margin-right: 20px;
+
+        & .result {
+          display: flex;
+          width: 100%;
+          padding: 10px 15px;
+          border: 1px solid black;
+          border-radius: 10px;
+          margin: 10px 0px;
+
+          &-left {
+            width: 80%;
+
+            & h1 {
+              margin: 0px;
+              font-size: 15px;
+            }
+            & p {
+              margin: 10px 0px;
+              font-size: 13px;
+              font-weight: 600;
+            }
+            & h2 {
+              margin: 0px;
+              font-size: 13px;
+              max-width: 80px;
+              overflow-x: scroll;
+            }
+          }
+          &-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+            & .distance {
+              text-align: center;
+              & h1 {
+                letter-spacing: 0.5px;
+                margin: 0px;
+              }
+            }
+
+            & .reserve {
+              & .reservedAgo {
+                background: greenyellow;
+                font-weight: 800;
+                font-size: 10px;
+                padding: 5px;
+                border-radius: 5px;
+              }
+            }
+            & .vehicleType {
+              border-radius: 10px;
+              padding: 8px;
+              text-align: center;
+
+              & h1 {
+                font-weight: 700;
+                margin: 0px;
+                font-size: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1250px) {
+  .map {
+    &-search {
+      & .container {
+        & .results {
+          width: 250px !important;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .map {
+    flex-direction: column !important;
+    &-search {
+      height: 50%;
+      max-height: 45vh;
+      width: 90% !important;
+      & .container {
+        & .results {
+          width: 350px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .map {
+    flex-direction: column !important;
+    &-search {
+      width: 90% !important;
+      & .container {
+        & .results {
+          width: 240px !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .map {
+    flex-direction: column !important;
+    &-search {
+      width: 90% !important;
+      & .container {
+        & .search {
+          & button {
+            padding: 3px 5px !important;
+            gap: 2px;
+            font-size: 12px;
+            & svg {
+              font-size: 15px;
+            }
+          }
+        }
+        & .results {
+          width: 300px !important;
+          margin-right: 0px !important;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          justify-content: center;
+          & .result {
+            width: 200px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 300px) {
+  .map {
+    flex-direction: column !important;
+    &-search {
+      width: 90% !important;
+      & .container {
+        & .search {
+          & button {
+            padding: 3px 5px !important;
+            gap: 2px;
+            font-size: 12px;
+            & svg {
+              font-size: 15px;
+            }
+          }
+        }
+        & .results {
+          width: 250px !important;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          & .result {
+            width: 170px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-height: 1300px) {
+  .map {
+    &-search {
+      height: 40vh;
+    }
+  }
+}

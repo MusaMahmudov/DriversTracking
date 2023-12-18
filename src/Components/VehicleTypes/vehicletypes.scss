@@ -1,0 +1,21 @@
+.vehicleType-list {
+  & .container {
+    & .vehicle-types {
+      & .heading {
+        padding: 20px;
+        text-align: center;
+        background-color: #4a156b;
+        & h1 {
+          color: white;
+          font-size: 40px;
+          margin: 0px;
+          font-weight: 900;
+        }
+      }
+      & .add-button {
+        background-color: black;
+        padding: 10px;
+      }
+    }
+  }
+}

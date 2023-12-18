@@ -1,0 +1,19 @@
+.update-form {
+  & .container {
+    padding: 20px;
+
+    & .heading {
+      margin-bottom: 20px;
+      & h1 {
+        margin: 0px;
+        font-size: 23px;
+      }
+    }
+    & .form {
+      margin-top: 30px;
+      display: flex;
+      justify-content: start;
+      flex-direction: column;
+    }
+  }
+}

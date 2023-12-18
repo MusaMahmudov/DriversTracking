@@ -1,0 +1,44 @@
+.drivers-list {
+  & .container {
+    & .drivers {
+      & .filter {
+        & .container {
+          padding: 10px 30px;
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+      & .heading {
+        padding: 20px;
+        text-align: center;
+        background-color: #4a156b;
+        & h1 {
+          color: white;
+          font-size: 40px;
+          margin: 0px;
+          font-weight: 900;
+        }
+      }
+      & .add-button {
+        background-color: black;
+        padding: 10px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .drivers-list {
+    & .container {
+      & .drivers {
+        & .filter {
+          & .container {
+            flex-direction: column !important;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+          }
+        }
+      }
+    }
+  }
+}
